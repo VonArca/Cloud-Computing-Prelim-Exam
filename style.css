@@ -1,0 +1,71 @@
+/* IT Limitless - style.css */
+:root{
+  --bg:#071023;
+  --card:#0b1220;
+  --accent:#3fa7d6;
+  --accent-2:#7ee8f2;
+  --muted:#94a3b8;
+  --glass: rgba(255,255,255,0.03);
+  --maxw:1100px;
+  --glass-2: rgba(63,167,214,0.06);
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#071023 0%, #07182a 60%);color:#e6eef6;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:18px 40px;background:linear-gradient(90deg,var(--accent-dark, #1f5f7a),#0b2b3a);position:sticky;top:0;z-index:20}
+.site-header .brand h1{margin:0;font-size:20px}
+.main-nav{display:flex;gap:12px;align-items:center}
+.main-nav a{color:rgba(230,238,246,0.85);text-decoration:none;font-weight:600}
+.btn{background:var(--accent);color:#012;border:none;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--accent-2)}
+.btn.small{padding:6px 10px;border-radius:8px}
+.hero{display:flex;gap:32px;align-items:center;justify-content:space-between;padding:60px;max-width:1200px;margin:0 auto}
+.hero-content{max-width:620px}
+.hero h2{margin:0;font-size:34px;color:var(--accent-2)}
+.lead{color:var(--muted);font-size:16px}
+.hero-image img{width:420px;border-radius:12px;box-shadow:0 12px 40px rgba(2,6,23,.6)}
+
+/* sections */
+.section{padding:48px 20px;max-width:var(--maxw);margin:0 auto}
+.section.alt{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border-radius:12px;margin-bottom:18px;padding:28px}
+.section h3{margin-top:0;color:var(--accent-2);font-size:24px}
+.features{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+.feature{background:var(--glass);padding:18px;border-radius:10px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+.card{background:var(--card);padding:14px;border-radius:12px}
+.card img{width:100%;border-radius:8px;margin-bottom:12px}
+.skills-list{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px}
+.skills-list span{background:var(--glass-2);padding:8px 12px;border-radius:999px;color:var(--accent-2);font-weight:600}
+
+/* resources */
+.resources{list-style:none;padding:0;margin:16px 0;display:grid;gap:8px}
+.resources a{color:var(--accent-2);text-decoration:none;font-weight:600}
+
+/* game */
+.game-area{max-width:520px;margin:10px auto;text-align:center}
+.canvas-wrap{position:relative;display:inline-block;padding:10px;border-radius:12px}
+.canvas-wrap.glow{box-shadow:0 0 18px rgba(63,167,214,0.12);border-radius:14px;padding:8px;border:1px solid rgba(63,167,214,0.06)}
+#gameCanvas{display:block;border-radius:10px;background:linear-gradient(180deg,#001f3f,#000814);}
+
+/* overlay */
+.overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:auto}
+.hidden{display:none}
+.overlay-box{background:rgba(4,8,20,0.9);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);text-align:center}
+.overlay-text{color:var(--accent-2);font-size:18px;margin-bottom:12px}
+
+/* cta */
+.cta-section .cta-bg{background-image:url('https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;padding:60px 20px;border-radius:12px;color:#fff}
+.cta-content{background:linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35));padding:36px;border-radius:10px;max-width:800px;margin:0 auto}
+.cta-content h3{margin-top:0}
+
+.quote{padding:40px 20px;text-align:center}
+.quote blockquote{font-size:18px;color:var(--muted);margin:0}
+
+/* footer */
+.site-footer{padding:24px;text-align:center;color:var(--muted);background:transparent}
+
+/* small */
+.small-link{color:var(--accent-2);text-decoration:none}
+
+/* responsive */
+@media(max-width:900px){.hero{flex-direction:column}.hero-image img{width:320px} .features{grid-template-columns:1fr} .grid-2{grid-template-columns:1fr}}

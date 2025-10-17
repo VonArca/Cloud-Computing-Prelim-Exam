@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT Limitless — Explore Information Technology</title>
+  <meta name="description" content="IT Limitless: persuasive site to encourage choosing Information Technology as a college course." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><h1>IT Limitless</h1></div>
+    <nav class="main-nav">
+      <a href="#why">Why IT</a>
+      <a href="#what">What You’ll Learn</a>
+      <a href="#skills">Skills</a>
+      <a href="#resources">Guides</a>
+      <a href="#game">Game</a>
+      <button id="themeToggle" class="btn small">☀️/🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>IT Limitless — Chart Your Path in Technology</h2>
+      <p class="lead">Build things that matter. Protect systems. Analyze the world. Information Technology gives you the tools to create the future.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="#what">What You’ll Learn</a>
+        <a class="btn ghost" href="#game">Play the Game</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/students_learning.png" alt="Students learning coding">
+    </div>
+  </section>
+
+  <main>
+    <section id="why" class="section">
+      <h3>Why choose Information Technology?</h3>
+      <p class="section-lead">Information Technology is an engine for career growth, creativity, and societal impact. It’s where ideas become products and problems become opportunities.</p>
+
+      <div class="features">
+        <article class="feature">
+          <h4>High Demand & Stability</h4>
+          <p>Companies across industries need IT professionals — software developers, network engineers, cybersecurity specialists, and data analysts.</p>
+        </article>
+
+        <article class="feature">
+          <h4>Creativity & Impact</h4>
+          <p>IT lets you design products, solve real problems, and build tools that millions use — from apps to secure systems.</p>
+        </article>
+
+        <article class="feature">
+          <h4>Global Flexibility</h4>
+          <p>Remote work, freelance, startups, and enterprise roles — IT skills travel internationally and across sectors.</p>
+        </article>
+
+        <article class="feature">
+          <h4>Learning That Sticks</h4>
+          <p>Hands-on projects, hackathons, and internships give you work-ready skills that show your capability — not just grades.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="what" class="section alt">
+      <h3>What you’ll learn</h3>
+      <div class="grid-2">
+        <div class="card">
+          <img src="assets/programming_software.png" alt="Programming">
+          <h4>Programming & Software Development</h4>
+          <p>Languages like Python and JavaScript, plus software design and testing.</p>
+        </div>
+        <div class="card">
+          <img src="assets/web_mobile.png" alt="Web">
+          <h4>Web & Mobile Development</h4>
+          <p>Front-end, back-end, deployment — building apps that people use every day.</p>
+        </div>
+        <div class="card">
+           <img src="assets/networks_cybersecurity.png" alt="Security">
+          <h4>Networks & Cybersecurity</h4>
+          <p>How systems communicate and how to defend them.</p>
+        </div>
+        <div class="card">
+          <img src="assets/data_analytics.png" alt="Data">
+          <h4>Data & Analytics</h4>
+          <p>Collecting, analyzing, and visualizing data to make decisions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h3>Skills you'll gain</h3>
+      <div class="skills-list">
+        <span>Programming Logic</span>
+        <span>Problem Solving</span>
+        <span>Version Control (Git)</span>
+        <span>Cloud & DevOps basics</span>
+        <span>Cyber Awareness</span>
+        <span>Data Handling</span>
+      </div>
+    </section>
+
+    <section id="resources" class="section alt">
+      <h3>Guides & resources</h3>
+      <p>Start learning today — free and beginner-friendly resources to build your first projects:</p>
+      <ul class="resources">
+        <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">FreeCodeCamp — Build projects as you learn</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools — Quick tutorials for web basics</a></li>
+        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs — The developer's reference</a></li>
+        <li><a href="https://www.kaggle.com/learn" target="_blank" rel="noopener">Kaggle Learn — Data & ML mini-courses</a></li>
+      </ul>
+    </section>
+
+    <section id="game" class="section">
+      <h3>Mini Game — Dodger</h3>
+      <p class="howto">How to play: Use the <strong>left</strong> and <strong>right</strong> arrow keys to move and dodge falling squares. Start when you're ready.</p>
+
+      <div class="game-area">
+        <div class="game-controls">
+          <button id="playBtn" class="btn">Play Now</button>
+          <button id="restartBtn" class="btn" style="display:none">Restart</button>
+        </div>
+
+        <div class="canvas-wrap glow">
+          <canvas id="gameCanvas" width="480" height="500"></canvas>
+          <div id="gameOverlay" class="overlay hidden">
+            <div class="overlay-box">
+              <div id="overlayText" class="overlay-text"></div>
+              <button id="overlayRestart" class="btn">Restart</button>
+            </div>
+          </div>
+        </div>
+
+        <p class="caption">Even simple games start from code — imagine what <em>you</em> could build in IT!</p>
+        <div class="game-meta">Score: <span id="score">0</span></div>
+      </div>
+    </section>
+
+    <section id="future" class="cta-section">
+      <div class="cta-bg">
+        <div class="cta-content">
+          <h3>IT: The Future Starts Here</h3>
+          <p>Technology shapes the world — and an IT degree equips you to shape it. From apps and AI to secure systems and data insights, IT empowers creators and problem-solvers.</p>
+          <a class="btn big" href="https://www.letran-calamba.edu.ph/academics/program-offerings/view-program/gZpVdX/school-of-computer-studies-and-technology" target="_blank" rel="noopener">Learn More — Letran Calamba</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <blockquote>“Information Technology isn’t just about computers — it’s about building the future.”</blockquote>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> IT Limitless — Make. Build. Ship.</div>
+    <div><a class="small-link" href="#home">Back to top</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
